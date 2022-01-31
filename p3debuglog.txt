@@ -1,0 +1,45 @@
+(gdb) b main
+Breakpoint 1 at 0x722: file p3original.c, line 3.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p3original.c:3
+3   {
+(gdb) n
+4     int n, i,sum=0;
+(gdb) n
+5     printf("Enter a positive integer :");
+(gdb) n
+6     scanf("%d",&n);
+(gdb) n
+Enter a positive integer :5
+7     for(i=1;i<=n;++i)
+(gdb) n
+9       sum +=i;
+(gdb) n
+7     for(i=1;i<=n;++i)
+(gdb) n
+9       sum +=i;
+(gdb) n
+7     for(i=1;i<=n;++i)
+(gdb) n
+9       sum +=i;
+(gdb) n
+7     for(i=1;i<=n;++i)
+(gdb) n
+9       sum +=i;
+(gdb) n
+7     for(i=1;i<=n;++i)
+(gdb) n
+9       sum +=i;
+(gdb) n
+7     for(i=1;i<=n;++i)
+(gdb) n
+11   printf("sum=%d",sum);
+(gdb) n
+12   return 0; 
+(gdb) c
+Continuing.
+sum=15[Inferior 1 (process 46) exited normally]
+(gdb)
