@@ -1,0 +1,31 @@
+(gdb) b main
+Breakpoint 1 at 0x823: file p2original.c, line 32.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p2original.c:32
+32    printf("Start of the program:\n");
+(gdb) n
+Start of the program:
+34    a=input();
+(gdb) n
+Enter a number:12
+35    b=input();
+(gdb) n
+Enter a number:34
+36    c=input();
+(gdb) n
+Enter a number:55
+37    l=cmp(a,b,c);
+(gdb) n
+38    output(l);
+(gdb) n
+39    printf("\nEnd of Program:");
+(gdb) n
+The largest number in the given input is: 55
+40    return 0;
+(gdb) c
+Continuing.
+End of Program:[Inferior 1 (process 210) exited normally]
+(gdb)
