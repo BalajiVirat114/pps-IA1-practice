@@ -1,0 +1,25 @@
+(gdb) b main
+Breakpoint 1 at 0x856: file p7original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p7original.c:31
+31    c1 = input();
+(gdb) n
+Enter the real part:12 
+Enter the imaginary part:34
+32    c2 = input();
+(gdb) n
+Enter the real part:12
+Enter the imaginary part:45
+33    sum = add(c1,c2);
+(gdb) n
+34    output(c1,c2,sum);
+(gdb) n
+The sum of 12.0 + 34.0i and 12.0 + 45.0i is 24.0 + 79.0i
+35    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 378) exited normally]
+(gdb)
